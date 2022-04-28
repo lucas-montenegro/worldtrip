@@ -1,0 +1,56 @@
+{
+    "resources": [
+        {
+            "text": "vida noturna",
+            "imgUrl": "/cocktail.svg"
+        },
+        {
+            "text": "praia",
+            "imgUrl": "/surf.svg"
+        },
+        {
+            "text": "moderno",
+            "imgUrl": "/building.svg"
+        },
+        {
+            "text": "clássico",
+            "imgUrl": "/museum.svg"
+        },
+        {
+            "text": "e mais...",
+            "imgUrl": "/earth.svg"
+        }
+    ], 
+    "countries": [
+        {
+            "title": "Europa",
+            "description": "O continente mais antigo",
+            "backgroundImg": "/ContinentImage.svg",
+            "href": "/country/europe"
+        },
+        {
+            "title": "America",
+            "description": "O continente mais antigo",
+            "backgroundImg": "/ContinentImage.svg",
+            "href": "/country/america"
+        },
+        {
+            "title": "Oceania",
+            "description": "O continente mais antigo",
+            "backgroundImg": "/ContinentImage.svg",
+            "href": "/country/oceania"
+        },
+        {
+            "title": "Asia",
+            "description": "O continente mais antigo",
+            "backgroundImg": "/ContinentImage.svg",
+            "href": "/country/asia"
+        },
+        {
+            "title": "Africa",
+            "description": "O continente mais antigo",
+            "backgroundImg": "/ContinentImage.svg",
+            "href": "/country/africa"
+        }
+    ]
+}
