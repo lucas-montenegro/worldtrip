@@ -11,7 +11,7 @@ type Resource = {
   imgUrl: string;
 }
 
-type Country = {
+type Continent = {
   title: string;
   description: string;
   backgroundImg: string;
@@ -19,10 +19,10 @@ type Country = {
 }
 interface HomeProps {
   resources: Resource[];
-  countries: Country[];
+  continents: Continent[];
 }
 
-export default function Home({ resources, countries }: HomeProps) {
+export default function Home({ resources, continents }: HomeProps) {
   return (
     <Box>
       <Header />
@@ -65,7 +65,7 @@ export default function Home({ resources, countries }: HomeProps) {
 
       
       <Box maxWidth="1240px" mx="auto" mb="10">
-        <Carousel countries={countries} />  
+        <Carousel continents={continents} />  
       </Box>
     </Box>
   )
@@ -77,13 +77,13 @@ export const getStaticProps: GetStaticProps = async () => {
   const resources = await resourcesData.json()
 
   // then, fetching features data
-  const countriesData = await fetch('http://localhost:7200/countries')
-  const countries = await countriesData.json()
+  const continentsData = await fetch('http://localhost:7200/continents')
+  const continents = await continentsData.json()
 
   return {
       props: {
         resources,
-        countries
+        continents,
       },
       revalidate: 60 * 60 * 24 * 7, // 1 week
   }

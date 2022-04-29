@@ -6,7 +6,7 @@ import 'swiper/css';
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-type Country = {
+type Continent = {
     title: string;
     description: string;
     backgroundImg: string;
@@ -14,10 +14,10 @@ type Country = {
 }
 
 interface CarouselProps {
-    countries: Country[];
+    continents: Continent[];
 }
 
-export function Carousel({ countries }: CarouselProps) {
+export function Carousel({ continents }: CarouselProps) {
     return (
         <Swiper
         slidesPerView={1}
@@ -29,26 +29,26 @@ export function Carousel({ countries }: CarouselProps) {
         navigation={true}
         modules={[Pagination, Navigation]}
       >
-        { countries.map(country => {
+        { continents.map(continent => {
             return (
-                <SwiperSlide key={country.title} >
+                <SwiperSlide key={continent.title} >
                     <Flex
                       w="100%"
                       h="450px"
-                      bgImage={country.backgroundImg}
+                      bgImage={continent.backgroundImg}
                       bgRepeat="no-repeat"
                       alignItems="center"
                       justifyContent="center"
                       textAlign="center"
                     >
-                        <Link href={country.href} _hover={{textDecoration: 'none'}}>
+                        <Link href={continent.href} _hover={{textDecoration: 'none'}}>
                             <Text
                               color="gray.50"
                               fontSize="5xl"
                               fontWeight="bold"
                               lineHeight="72px"
                             >
-                                {country.title}
+                                {continent.title}
                             </Text>
 
                             <Text
@@ -57,7 +57,7 @@ export function Carousel({ countries }: CarouselProps) {
                               fontWeight="bold"
                               lineHeight="9"
                             >
-                                {country.description}
+                                {continent.description}
                             </Text>
                         </Link>
                     </Flex>                    
