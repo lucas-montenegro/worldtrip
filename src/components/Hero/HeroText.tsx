@@ -2,13 +2,13 @@ import { Flex, Stack, Box, Text } from '@chakra-ui/react'
 
 export function HeroText() {
     return (
-        <Flex>
-            <Stack spacing="5" alignItems="start">
-                <Box maxWidth="426px">
+        <Flex justifyContent="center">
+            <Stack spacing={{base: "2", lg: "5"}} alignItems="start">
+                <Box maxWidth={{base: "238px", lg: "426px"}}>
                     <Text
                       color="gray.50"
-                      fontSize="4xl"
-                      lineHeight="54px"
+                      fontSize={{ base: "xl", lg: "2xl", xl: "4xl"}}
+                      lineHeight={{base: "30px", lg: "54px"}}
                       fontWeight="medium"
                     >
                         5 Continentes, 
@@ -17,11 +17,11 @@ export function HeroText() {
                     </Text>
                 </Box>
 
-                <Box maxWidth="524px">
+                <Box maxWidth={{base: "333px", lg: "524px"}} >
                     <Text 
                       color="gray.100"
-                      fontSize="xl"
-                      lineHeight="8"
+                      fontSize={{base: "sm", lg: "xl"}}
+                      lineHeight={{base: "21px", lg: "8"}}
                       fontWeight="normal"
                     > 
                         Chegou a hora de tirar do papel a viagem que você sempre sonhou.

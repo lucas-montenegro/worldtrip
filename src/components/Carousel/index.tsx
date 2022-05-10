@@ -34,28 +34,28 @@ export function Carousel({ continents }: CarouselProps) {
                 <SwiperSlide key={continent.title} >
                     <Flex
                       w="100%"
-                      h="450px"
+                      h={{base: "250px", lg: "450px"}}
                       bgImage={continent.backgroundImg}
                       bgRepeat="no-repeat"
-                      alignItems="center"
+                      pt={{base: "110px", lg: "180px"}}
                       justifyContent="center"
                       textAlign="center"
                     >
                         <Link href={continent.href} _hover={{textDecoration: 'none'}}>
                             <Text
                               color="gray.50"
-                              fontSize="5xl"
+                              fontSize={{base: "xl", lg: "5xl"}}
                               fontWeight="bold"
-                              lineHeight="72px"
+                              lineHeight={{base: "36px", lg: "72px"}}
                             >
                                 {continent.title}
                             </Text>
 
                             <Text
                               color="gray.100"
-                              fontSize="2xl"
+                              fontSize={{base: "sm", lg: "2xl"}}
                               fontWeight="bold"
-                              lineHeight="9"
+                              lineHeight={{base: "21px", lg: "9"}}
                             >
                                 {continent.description}
                             </Text>

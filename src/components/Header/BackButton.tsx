@@ -3,10 +3,10 @@ import { ChevronLeftIcon } from '@chakra-ui/icons'
 
 export function BackButton() {
     return (
-        <Link ml="36" href='/' position="absolute"> 
+        <Link ml={{base: "4", lg: "36"}} href='/' position="absolute"> 
             <ChevronLeftIcon 
-              w="6"
-              h="8"
+              w={{base: "3", lg: "6"}}
+              h={{base: "4", lg: "8"}}
               color="gray.600" 
             />
         </Link>

@@ -2,23 +2,23 @@
     "resources": [
         {
             "text": "vida noturna",
-            "imgUrl": "/cocktail.svg"
+            "img": "/cocktail.svg"
         },
         {
             "text": "praia",
-            "imgUrl": "/surf.svg"
+            "img": "/surf.svg"
         },
         {
             "text": "moderno",
-            "imgUrl": "/building.svg"
+            "img": "/building.svg"
         },
         {
             "text": "clássico",
-            "imgUrl": "/museum.svg"
+            "img": "/museum.svg"
         },
         {
             "text": "e mais...",
-            "imgUrl": "/earth.svg"
+            "img": "/earth.svg"
         }
     ], 
     "continents": [

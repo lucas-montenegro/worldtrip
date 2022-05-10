@@ -13,7 +13,7 @@ export function Header() {
           w="100%"
           maxWidth={1440}
           mx="auto"
-          py="7"
+          py={{base: "4", lg: "7"}}
           alignItems="center"
           position="relative"
         >

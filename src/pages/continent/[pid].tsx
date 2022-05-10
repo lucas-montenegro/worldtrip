@@ -1,5 +1,5 @@
 import { GetStaticProps, GetStaticPaths } from 'next'
-import { Box, Text, Stack } from '@chakra-ui/react'
+import { Box, Text, Stack, Flex } from '@chakra-ui/react'
 import { City } from '../../types/city'
 
 import { Header } from '../../components/Header'
@@ -29,20 +29,29 @@ export default function Continent({
         <>
             <Header />
 
-            <Box w="100%" h="500px" mb="20" bgImage={img} bgRepeat="no-repeat">
+            <Flex 
+              w="100%" 
+              h={{base: "150px", lg: "500px"}} 
+              mb={{base: "6", lg: "20"}} 
+              bgImage={img} 
+              bgRepeat="no-repeat" 
+              bgSize="cover" 
+              alignItems={{base: "center", lg: "start"}}
+              justifyContent={{base: "center", lg: "start"}}
+            >
                 <Text
-                pt="96"
-                pl="36"
-                fontWeight="semibold"
-                fontSize="5xl"
-                lineHeight="72px"
-                color="gray.50"
+                  pt={{lg: "369px"}}
+                  pl={{lg: "140px"}}
+                  fontWeight="semibold"
+                  fontSize={{base: "3xl", lg: "5xl"}}
+                  lineHeight={{base: "42px", lg: "72px"}}
+                  color="gray.50"
                 >
                     {name}
                 </Text>
-            </Box>
+            </Flex>
 
-            <Stack w="100%" maxWidth="1160px" mx="auto" spacing="20" mb="9">
+            <Stack w="100%" maxWidth="1160px" mx="auto" spacing={{base: "8", lg: "20"}} mb={{base: "4", lg: "9"}} >
                 <ContinentInfo
                 description={description}
                 countriesNumber={countriesNumber}

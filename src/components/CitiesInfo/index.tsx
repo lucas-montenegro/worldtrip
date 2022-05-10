@@ -9,12 +9,12 @@ interface CitiesInfoProps {
 
 export function CitiesInfo({ cities }: CitiesInfoProps) {
     return (
-        <Box w="100%">
+        <Box w="100%" pl={{base: "4", lg: "0"}}>
             <Text
-              mb="10"
-              fontSize="4xl"
+              mb={{base: "5", lg: "10"}}
+              fontSize={{base: "2xl", lg: "4xl"}}
               fontWeight="medium"
-              lineHeight="54px"
+              lineHeight={{base: "36px", lg: "54px"}}
             >
                 Cidades +100
             </Text>
